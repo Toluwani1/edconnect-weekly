@@ -1,0 +1,134 @@
+.search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .search-container {
+    float: right;
+  }
+
+  .explore_layout
+  {
+    width: 1200px;
+    height: 200px;
+    background-color: rgb(241, 238, 238);
+    margin: 50px auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex;
+  }
+  .explore_layout
+  {
+flex: 1;
+  }
+  
+  .project-container
+  {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+  }
+
+  .pro-container
+  {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 22%;/*you can use either width or flex-basis*/
+    border: 2px double dodgerblue;
+  
+}
+h2
+{
+  text-transform: capitalize;
+}
+h3
+{
+    color: cornflowerblue;
+    text-transform: capitalize;
+}
+.mark
+{
+    background-color: rgb(145, 145, 153);
+}
+footer
+{
+  text-align: right;
+  background-color: rgb(241, 238, 238);
+  width: 1200px;
+  height: 40px;
+  margin: 50px auto 0 auto;
+  padding-top: 8px;
+  padding-right: 20px;
+
+}
+.login
+{
+  width: 400px;
+  margin-left: 30%;
+}
+.form-container
+{
+  width: 1000px;
+  
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  
+}
+.profile-container
+{
+  width: 1300px;
+  margin: auto;
+}
+.profile-row
+{
+  background-color: rgb(241, 238, 238);
+   width:1300px;
+   padding-left: 20px;
+}
+
+.formy-container
+{
+  width: 1200px;
+  background-color: rgb(241, 238, 238);
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+}
+.create-projectcontainer
+{
+  width: 600px;
+  margin: auto;
+}
+.edit-projectcontainer
+{
+  width: 1200px;
+  margin:auto;
+}
+
+
+
+
+
+
+
+
+  @media (min-width: 800px)
+  {
+  .project-container
+  {
+      display : flex;
+      justify-content: space-between;
+    }
+    .register-container
+    {
+      flex-wrap: wrap;
+    }
+}
+

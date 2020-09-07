@@ -3,61 +3,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
+ 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<body>
-    <h1>Project Explorer</h1>
-    <h2>One Stop Database for Final Year Projects.</h2>
 
-    <nav>
-        <ul><!--link to subpages-->
-            <li><a href="C:\Users\Toluwani\edconnect-weekly\app\public\project-explorer/index.html">Home</a></li> 
-            <li><a href="C:\Users\Toluwani\edconnect-weekly\app\public\project-explorer/search.html">Projects</a></li>
-            <li><a href="C:\Users\Toluwani\edconnect-weekly\app\public\project-explorer/createproject.html">Submit</a></li>
-            <li><a href="C:\Users\Toluwani\edconnect-weekly\app\public\project-explorer/login.html">login</a></li>
-            <li><a href="C:\Users\Toluwani\edconnect-weekly\app\public\project-explorer/register.html">Register</a></li>
-        </ul>          
-    </nav>
-    <h2>Update Profile</h2><br>
+<body>
+    <link rel="stylesheet" href="C:\Users\Toluwani\edconnect-weekly\app\public\project-explorer\css\style.css">
+    <!--nav bar-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>    
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">
+    <a class="navbar-brand" href="C:\Users\Toluwani\edconnect-weekly\app\public\project-explorer/index.html">
+        <span class="navbar-text">Project Explorer</span>  
+    </a>
+<div class="search-container">   
+    <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Project Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+</div>
+    <ul class="nav navbar-nav mr-auto"> <!--link to subpages // margin right-->
+         
+        <li class="nav-item"><a class="nav-link" href="C:\Users\Toluwani\edconnect-weekly\app\public\project-explorer/search.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="C:\Users\Toluwani\edconnect-weekly\app\public\project-explorer/createproject.html">Submit</a></li>
+    </ul>
+        <ul class="navbar-nav">
+        
+            <li class="nav-item  "><a class="nav-link" >signed in as: <b >Nestle Milo</b></a></li>
+            <li class="nav-item "><a class="nav-link" href="C:\Users\Toluwani\edconnect-weekly\app\public\project-explorer/login.html">Log Out</a></li>
+        
+    </ul>          
+</nav>
+</div>
+<br><br>
+<div class="profile-container">
+    <div class="prof-container">
+        <h2 style="display: inline;">Nestle Milo</h2><span class="display: inline;"><i> test@edconnect.ng</i> </span><!--you can put a header and text on same line using inline-->
+        <div class="profile-row">
+        <div class="row"  >
+            <div class="col">
+                <p> Program <br> Computer Tech</p>
+            </div>
+            <div class="col">
+                <p> Matriculation Number <br> 16/1111</p>
+            </div>
+            <div class="col">
+                <p> Graduation Year <br> 2020</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+<br><br>
+
+    <h4>Update Profile</h4>
+    <hr>
+    
+        <div class="form-container">
+            <form action="">
+                <div class="row"> <!--using rows and column to group some elemeents on the same line-->
+                  <div class="col">
+                    <div class="form-group">
+                        <label for="firstName" >First Name </label><br>
+                        <input type="text" id="firstName" name="firstName" class="form-control"placeholder=" first name" value="Nestle" >
+                  </div>  
+                </div>
+                  <div class="col">
+                    <div class="form-group">
+                        <label for="lastName" >Last Name </label><br>
+                        <input type="text" id="lastName" name="lastName" class="form-control"placeholder=" last name" value="Milo">
+                        </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="email" >Email: </label>
+                            <input type="email" id="email" name="email" class="form-control"placeholder=" email" value="test@edconnect.ng">
+                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="program">Program:</label><br>
+                            <select name="program" id="program" class="form-control">
+                                <option value="computer_science">Computer Science</option>
+                                <option value="computer_information_systems">Computer Information Systems</option>
+                                <option value="computer_technology">Computer Technology</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    
+                    <div class="col">
+                      <div class="form-group">
+                         <label for="matricNumber" >Matric Number:</label><br>
+                         <input type="text" id="matricNumber" name="matricNumber" class="form-control" placeholder="e.g 18/2311" value="16/1111">
+                        </div>
+                    </div>    
+                    <div class="col">
+                        <label for="graduationYear">Graduation Year</label><br>
+                        <select name="graduationYear" id="graduationYear" class="form-control">
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                        </select><br>
+                    </div>        
+                </div>
+                <button class="btn btn-primary" href="#" >Update Profile</button>
+                </form>
+        </div>
+        
+    <h4>Change Password</h4>
+    <hr>
+    <div class="form-container">
     <form action="">
-    <label for="firstName" >First Name: </label><br>
-        <input type="text" id="firstName" name="firstName"><br><br>
-        <label for="lastName" >Last Name: </label><br>
-        <input type="text" id="lastName" name="lastName"><br><br>
-        <label for="email" >Email Address: </label><br>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="matricNumber" >Matric Number:</label><br><br>
-        <input type="number" id="matricNumber" name="matricNumber"><br><br>
-        <label for="program">Program:</label><br>
-        <select name="program" id="program">
-            <option value="computer_science">Computer Science</option>
-            <option value="computer_information_systems">Computer Information Systems</option>
-            <option value="computer_technology">Computer Technology</option>
-        </select><br><br>
-        <label for="graduationYear">Graduation Year</label><br>
-        <select name="graduationYear" id="graduationYear">
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-            <option value="2018">2018</option>
-            <option value="2017">2017</option>
-            <option value="2016">2016</option>
-            <option value="2015">2015</option>
-            <option value="2014">2014</option>
-            <option value="2013">2013</option>
-            <option value="2012">2012</option>
-            <option value="2011">2011</option>
-            <option value="2010">2010</option>
-        </select><br><br>
-        <input type="submit" value="Submit">
+        <div class="row">
+            <div class="col">
+                <label for="currentPassword">Current Password:</label><br>
+                <input type="text" id="currentPassword" name="currentPassword" class="form-control">            
+            </div>
+            <div class="col">
+                <label for="newPassword">New Password:</label><br>
+                <input type="password" id="newPassword" name="newPassword" class="form-control">        
+            </div>
+            <div class="col">
+                <label for="confirmPassword">Confirm Password:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="form-control">        
+            </div>
+        </div>
+        <br>
+        <input class="btn btn-primary" type="submit" value="Submit">
     </form>
-    <h2>Change Password</h2>
-    <form action="">
-        <label for="currentPassword">Current Password:</label><br>
-        <input type="text" id="currentPassword" name="currentPassword"><br><br>    
-        <label for="newPassword">New Password:</label><br>
-        <input type="password" id="newPassword" name="newPassword"><br><br>
-        <label for="confirmPassword">Confirm Password:</label><br>
-        <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
-        <input type="submit" value="Submit">
-    </form>
+</div>
+</div>
+</div>
+<footer style="width: 1300px;">
+    Project Explorer ©2020. <b>Edconnect</b>
+    </footer>
 </body>
 </html>
