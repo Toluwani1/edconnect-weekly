@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav id="nav">
+    <form id="blue">
+      <a href="index.html" id="label">Project Explorer</a>
+      <input type="text" placeholder="Search Projects" id="search" />
+      <input type="submit" value="Search" id="go" />
+      <a href="search.html" id="leftnav1">Projects</a>
+      <a href="createProject.html" id="leftnav2">Submit</a>
+      <a href="login.html" class="rightnav">Logout</a>
+      <a href="register.html" class="rightnav">Signed in as:<span style="color: white;"> Ade Ade</span></a>
+    </form>
+  </nav>
+  <p class="top"><span id="test-name"><b>Ade Ade</b> </span><span style="color: gray;">test@edconnect.ng</span></p>
+  <div id="topbar">
+    <div class="topbar-content">
+      <p>Program<br />Computer Science</p>
+    </div>
+    <div class="topbar-content">
+      <p>Matriculation number<br />00/0000</p>
+    </div>
+    <div class="topbar-content">
+      <p>Graduation Year<br />2019</p>
+    </div>
+  </div>
+  <br />
+  <h4 class="top" id="update">Update Profile</h4>
+  <hr class="top" color="#eeeff0" id="hrmargin" />
+  <form>
+    <div class="profile-content">
+      <div class="profile-row1">
+        <label for="fname">First name<br /><input class="tab" name="fname" type="text" value="Ade" /></p>
+        <label for="mail">Email<br /><input class="tab" name="mail" type="text" value="test@edconnect.ng" /></p>
+        <label for="matric">Matriculation number<br /><input class="tab" name="matric" type="text" value="00/0000" /></p>
+      </div>
+      <div class="profile-row2">
+        <label for="lname">Last name<br /><input class="tab" name="lname" type="text" value="Ade" /></p>
+        <label for="prog">Program<br /><select name="Program" name="prog" class="tab">
+            <option value="Computer Science" selected>Computer Science</option>
+            <option value="Public Health">Public Health</option>
+            <option value="Anatomy">Anatomy</option>
+          </select>
+        </p>
+        <label for="gy">Graduation Year<br /><select name="gy" class="tab">
+            <option value="2020">2020</option>
+            <option value="2019" selected>2019</option>
+            <option value="2018">2018</option>
+          </select>
+        </p>
+      </div>
+    </div>
+    <a href="index.html"><input type="submit" value="Update Profile" id="started" class="register-page" /></a>
+  </form>
+  <br /> <br />
+  <h4 class="top change">Change Password</h4>
+  <hr class="top style" />
+  <form>
+    <div id="change-password">
+      <div class="pass">
+        <label for="current">Current password<br /><input class="tab2" name="current" type="text" placeholder="Current password" /></p>
+      </div>
+      <div class="pass">
+        <label for="new">New password<br /><input class="tab2" name="new" type="text" placeholder="Your new password" /></p>
+      </div>
+      <div class="pass">
+        <label for="confirm">Confirm password<br /><input class="tab2" name="confirm" type="text" placeholder="Confirm new password" /></p>
+      </div>
+    </div>
+    <a href="profile.html"><input type="submit" value="Change Password" class="register-page reg" /></a>
+  </form>
+  <br /> <br /> <br /> <br />
+  <div id="bottom-right">
+    <p id="bottom-text">Project Explorer &copy; 2020 .<span id="edconnect"> Edconnect</span></p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Create Project</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav id="nav">
+    <form id="blue">
+      <a href="index.html" id="label">Project Explorer</a>
+      <input type="text" placeholder="Search Projects" id="search" />
+      <input type="submit" value="Search" id="go" />
+      <a href="search.html" id="leftnav1">Projects</a>
+      <a href="createProject.html" id="leftnav2">Submit</a>
+      <a href="login.html" class="rightnav">Logout</a>
+      <a href="register.html" class="rightnav">Signed in as:<span id="white"> Ade Ade</span></a>
+    </form>
+  </nav>
+  <div id="submit-proj">
+    <h2>Submit Project</h2>
+    <form>
+      <p class="marg9">Project Title</p>
+        <input type="text" placeholder="Enter project name" class="place" />
+      <p class="marg9">Project Abstract</p>
+        <textarea name="project abstract" cols="62" rows="10" class="place1"></textarea>
+      <p class="marg8">Author(s)</p>
+        <input type="text" placeholder="Enter author names (separated by comma)" class="place" />
+      <p class="marg8">Tag(s)</p>
+        <input type="text" placeholder="Use # to tag project with different topics (e.g. #javascript #mongodb)" class="place" />
+      <br />
+      <a href="editProject.html"><input type="submit" value="Continue" id="started" class="styler" /></a>
+    </form>
+  </div>
+  <br /> <br /> <br /> <br /> <br />
+  <div id="bottom-right">
+    <p id="bottom-text">Project Explorer &copy; 2020 .<span id="edconnect"> Edconnect</span></p>
+  </div>
+</body>
+
+</html>

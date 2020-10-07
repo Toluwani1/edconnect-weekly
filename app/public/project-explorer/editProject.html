@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Edit Project</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav id="nav">
+    <form id="blue">
+      <a href="index.html" id="label">Project Explorer</a>
+      <input type="text" placeholder="Search Projects" id="search" />
+      <input type="submit" value="Search" id="go" />
+      <a href="search.html" id="leftnav1">Projects</a>
+      <a href="createProject.html" id="leftnav2">Submit</a>
+      <a href="login.html" class="rightnav">Logout</a>
+      <a href="register.html" class="rightnav">Signed in as:<span id="white"> Ade Ade</span></a>
+    </form>
+  </nav>
+  <h2 class="classp">Project 4</h2>
+  <div class="viewbar">
+    <div class="topbar-content">
+      <p>Created By<br />Ade Ade</p>
+    </div>
+    <div class="topbar-content">
+      <p>Date Created<br />2020-08-04</p>
+    </div>
+    <div class="topbar-content">
+      <p>Last Updated<br />2020-08-04</p>
+    </div>
+    <input type="button" value="View Project" class="starts" id="id" />
+  </div>
+  <form>
+    <div class="edit">
+      <div id="edit1">
+        <h3 class="pro">Edit Project</h3>
+        <hr class="top a" color="#eeeff0" />
+        <p>Project name<br /><input class="tab" type="text" value="Project 4" class="wide" /></p>
+        <p>Project Abstract</p>
+        <textarea name="project abstract" cols="69" rows="10" class="place1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ex eu tortor mollis gravida eu ac arcu. Maecenas vitae turpis non risus euismod condimentum. Suspendisse ultrices bibendum ante vel porttitor. Morbi non odio volutpat, volutpat erat quis, facilisis nulla. Suspendisse interdum massa urna, et posuere elit iaculis non. Vivamus eleifend sodales posuere. Sed id enim purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum enim non purus ornare, sit amet ornare magna hendrerit.</textarea>
+        <p>Author(s)<br /><input class="tab" type="text" value="Henry James, Bola Ade" class="wide" /></p>
+        <p>Tag(s)<br /><input class="tab" type="text" value="#yaml, #ejs" class="wide" /></p>
+      </div>
+      <div class="edit2">
+        <h3 class="pro">Manage Project files</h3>
+        <hr color="#eeeff0" />
+        <div id="clicker">
+          <label class="file">
+            <input type="file" id="file" aria-label="File browser example" />
+            <span class="file-custom cc_pointer"></span>
+          </label>
+        </div>
+        <hr color="#eeeff0" />
+        <h3 class="pro" id="project-files">Project files</h3>
+        <p id="no-file" class="nofile">No file uploaded yet</p>
+      </div>
+    </div>
+    <a href="viewProject.html"><input type="submit" value="Save" id="started" class="save" /></a>
+  </form>
+  <br /><br /><br /><br />
+  <div id="bottom-right">
+    <p id="bottom-text">Project Explorer &copy; 2020 .<span id="edconnect"> Edconnect</span></p>
+  </div>
+</body>
+
+</html>

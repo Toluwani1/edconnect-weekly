@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Search</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav id="nav">
+    <form id="blue">
+      <a href="index.html" id="label">Project Explorer</a>
+      <input type="text" placeholder="Search Projects" id="search" />
+      <input type="submit" value="Search" id="go" />
+      <a href="search.html" id="leftnav1">Projects</a>
+      <a href="createProject.html" id="leftnav2">Submit</a>
+      <a href="login.html" class="rightnav">Logout</a>
+      <a href="register.html" class="rightnav">Signed in as:<span style="color: white;"> Ade Ade</span></a>
+    </form>
+  </nav>
+  <h2 id="margin">Project Gallery</h2>
+  <form>
+    <nav id="search-page">
+      <div id="line2">
+        <input type="text" id="search-page-nav" placeholder="Search project name, authors, abstract, tags" />
+        <span class="abstract"><p class="text">Search By</p></span>
+        <select name="Search filter" class="tab width">
+          <option value="Project name">Name</option>
+          <option value="Authors">Authors</option>
+          <option value="Abstract">Abstract</option>
+          <option value="Tags">Tags</option>
+        </select>
+      </div>
+      <input type="submit" value="Search" id="started" class="box" />
+    </nav>
+  </form>
+  <p id="style"><b id="larger">All Projects</b>
+    <span style="color: gray;">(4 results)</span></p>
+  <div class="project-container" id="px">
+    <div class="project">
+      <h3>Project 1</h3>
+      <p class="author">Henry James, Bola Ade</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+      <p class="tag">#yaml, #ejs</p>
+    </div>
+
+    <div class="project">
+      <h3>Project 2</h3>
+      <p class="author">Ben Rice, Ade Sola</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+      <p class="tag">#css, #html</p>
+    </div>
+
+    <div class="project">
+      <h3>Project 3</h3>
+      <p class="author">Fried Lim, Tola Daniel</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+      <p class="tag">#ejs, #ci</p>
+    </div>
+
+    <div class="project">
+      <h3>Project 4</h3>
+      <p class="author">James Li, Ade Brian</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+      <p class="tag">#javascript, #mongodb</p>
+    </div>
+  </div>
+  <div id="bottom-right" style="margin-top: -90px;">
+    <p id="bottom-text">Project Explorer &copy; 2020 .<span id="edconnect"> Edconnect</span></p>
+  </div>
+</body>
+
+</html>

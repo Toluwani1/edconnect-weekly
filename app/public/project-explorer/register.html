@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav id="nav">
+    <form id="blue">
+      <a href="index.html" id="label">Project Explorer</a>
+      <input type="text" placeholder="Search Projects" id="search" />
+      <input type="submit" value="Search" id="go" />
+      <a href="search.html" id="leftnav1">Projects</a>
+      <a href="createProject.html" id="leftnav2">Submit</a>
+      <a href="login.html" class="rightnav">Login</a>
+      <a href="register.html" class="rightnav">Sign up</a>
+    </form>
+  </nav>
+  <br /><br />
+  <h2 class="register-page">Sign up</h2>
+  <div class="profile-content">
+    <div class="profile-row1">
+      <form>
+        <label for="fname">First name<br /><input class="tab" name="fname" type="text" placeholder="First name" /></p>
+          <label for="email">Email<br /><input class="tab" name="email" type="text" placeholder="Your Email address" />
+            </p>
+            <p>Program<br /><select name="Program" class="tab">
+                <option value="Choose..." selected>Choose...</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Public Health">Public Health</option>
+                <option value="Anatomy">Anatomy</option>
+              </select>
+            </p>
+    </div>
+    <div class="profile-row2">
+      <label for="lname">Last name<br /><input class="tab" name="lname" type="text" placeholder="Last name" /></p>
+        <label for="pass">Password<br /><input class="tab" name="pass" type="password" placeholder="Your Password" />
+          </p>
+          <div>
+            <label for="mnum">Matriculation number<br /><input class="smalltab" name="mnum" type="text"
+                placeholder="e.g 16/2020" /></p>
+              <p class="grad">Graduation Year<br /><select name="Graduation Year" class="smalltab">
+                  <option value="Choose..." selected>Choose...</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                </select>
+              </p>
+          </div>
+    </div>
+  </div>
+  <a href="index.html"><input type="submit" value="Sign up" id="started" class="register-page" /></a>
+  </form>
+  <br /> <br /> <br /> <br />
+  <div id="bottom-right">
+    <p id="bottom-text">Project Explorer &copy; 2020 .<span id="edconnect"> Edconnect</span></p>
+  </div>
+</body>
+
+</html>
